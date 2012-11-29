@@ -1,0 +1,126 @@
+$blueColor: rgba(30,100,200,0.7);
+$defaultFontStyle: sans-serif;
+$tableBackgroundColor: rgba(237, 237, 237, 0.80);
+$redColor: rgba(200, 34, 43, 0.87);
+@mixin gradient($from, $to) {
+  background-color: $from;
+  background-image: -webkit-linear-gradient($from, $to);
+}
+@mixin box-shadow{
+  z-index : -1;
+  position : absolute;
+  background : transparent;
+  width : 100%;
+  height : 30%;
+  content : '';
+  left : -100px;
+  bottom :10px;
+  box-shadow : 0 4px 16px rgba(darken(rgb(0, 0, 0),3%), 0.1);
+}
+
+
+
+
+@mixin circle($w: 25px,$h: 25px,$color:red){
+  @include gradient($color,darken($color,4%));
+  z-index: 1;
+  border-radius:200px;
+  display:block;
+  height:$w;
+  line-height:$w;
+  position:absolute;
+  text-align:center;
+  width:$h;
+  z-index:1
+
+};
+
+
+
+
+.error {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  background: red;
+  color: white;
+}
+
+
+
+
+
+
+
+.summary-li {
+  @include gradient($tableBackgroundColor,darken($tableBackgroundColor,0.9));
+  margin: 0px 0px 0.5px 0px;
+  color: black;
+  height: 50px;
+  list-style-type: none;
+  font-family: $defaultFontStyle;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1.0px;
+  border-color: darken($tableBackgroundColor,30%);
+  font-size: 30px;
+  text-align: left;
+  padding: 25px 10px 5px 25px;
+
+    @for $i from 0 through 10 {
+    .drink-count#{$i} {
+      @if $i % 2 == 0 {
+        @include circle(30px,24px, $redColor);
+      }@else {
+        @include circle(30px,24px,$blueColor);
+      }
+      position: absolute;
+      font-size : 18px;
+      font-weight: bold;
+      right: 20px;
+      margin-top: -35px;
+  }
+  }
+
+};
+
+
+$cafeColor: rgba(217,121,47,1.0);
+
+@function gradColor($color){
+  @return darken($color,4%);
+}
+
+@each $type in cafe,drip,cocoa,tea,green {
+  .drink-li-#{$type} {
+    @if $type == cafe {
+      @include gradient($cafeColor,darken($cafeColor,4%));
+    }@else if $type == drip {
+      @include gradient(darken($cafeColor,40%),darken($cafeColor,44%));
+    }@else if $type == green {
+      @include gradient(darken(green,4%),darken(green,8%));
+    }@else if $type == cocoa {
+      @include gradient(darken($cafeColor,30%),darken($cafeColor,34%));
+    }@else if $type == tea {
+      $c: lighten($cafeColor,8%);
+      @include gradient($c,darken($c,4%));
+
+    };
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    &:before {
+      @include box-shadow;
+    }
+  }
+
+
+};
+
+
+
+
+
+
+
+

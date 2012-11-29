@@ -1,0 +1,294 @@
+.error {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  background: red;
+  color: white; }
+
+.summary-li {
+  background-color: rgba(237, 237, 237, 0.8);
+  background-image: -webkit-linear-gradient(rgba(237, 237, 237, 0.8), rgba(235, 235, 235, 0.8));
+  margin: 0px 0px 0.5px 0px;
+  color: black;
+  height: 50px;
+  list-style-type: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1.0px;
+  border-color: rgba(161, 161, 161, 0.8);
+  font-size: 30px;
+  text-align: left;
+  padding: 25px 10px 5px 25px; }
+  .summary-li .drink-count0 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count1 {
+    background-color: rgba(30, 100, 200, 0.7);
+    background-image: -webkit-linear-gradient(rgba(30, 100, 200, 0.7), rgba(27, 91, 182, 0.7));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count2 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count3 {
+    background-color: rgba(30, 100, 200, 0.7);
+    background-image: -webkit-linear-gradient(rgba(30, 100, 200, 0.7), rgba(27, 91, 182, 0.7));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count4 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count5 {
+    background-color: rgba(30, 100, 200, 0.7);
+    background-image: -webkit-linear-gradient(rgba(30, 100, 200, 0.7), rgba(27, 91, 182, 0.7));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count6 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count7 {
+    background-color: rgba(30, 100, 200, 0.7);
+    background-image: -webkit-linear-gradient(rgba(30, 100, 200, 0.7), rgba(27, 91, 182, 0.7));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count8 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count9 {
+    background-color: rgba(30, 100, 200, 0.7);
+    background-image: -webkit-linear-gradient(rgba(30, 100, 200, 0.7), rgba(27, 91, 182, 0.7));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+  .summary-li .drink-count10 {
+    background-color: rgba(200, 34, 43, 0.87);
+    background-image: -webkit-linear-gradient(rgba(200, 34, 43, 0.87), rgba(183, 31, 39, 0.87));
+    z-index: 1;
+    border-radius: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 24px;
+    z-index: 1;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 20px;
+    margin-top: -35px; }
+
+.drink-li-cafe {
+  background-color: #d9792f;
+  background-image: -webkit-linear-gradient(#d9792f, #ce6f26);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+  .drink-li-cafe:before {
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    content: '';
+    left: -100px;
+    bottom: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+
+.drink-li-drip {
+  background-color: #331b09;
+  background-image: -webkit-linear-gradient(#331b09, #211206);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+  .drink-li-drip:before {
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    content: '';
+    left: -100px;
+    bottom: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+
+.drink-li-cocoa {
+  background-color: #5e3311;
+  background-image: -webkit-linear-gradient(#5e3311, #4d290e);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+  .drink-li-cocoa:before {
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    content: '';
+    left: -100px;
+    bottom: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+
+.drink-li-tea {
+  background-color: #df8f51;
+  background-image: -webkit-linear-gradient(#df8f51, #dc8440);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+  .drink-li-tea:before {
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    content: '';
+    left: -100px;
+    bottom: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
+
+.drink-li-green {
+  background-color: #006c00;
+  background-image: -webkit-linear-gradient(#006c00, #005700);
+  color: white;
+  font-size: 18px;
+  font-weight: bold; }
+  .drink-li-green:before {
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 30%;
+    content: '';
+    left: -100px;
+    bottom: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
