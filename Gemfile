@@ -4,6 +4,7 @@ source "https://rubygems.org"
 # gem "rails"
 #
 gem "sinatra"
+gem 'foreman'
 gem 'heroku'
 gem "mongoid"
 gem "pry"
