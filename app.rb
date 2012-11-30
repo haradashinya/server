@@ -23,6 +23,7 @@ helper = Helper.new
 
 class App < Sinatra::Base
   set :port , 80
+  use Rack::Logger
 
 
 
