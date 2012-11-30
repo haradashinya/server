@@ -22,6 +22,7 @@ end
 helper = Helper.new
 
 class App < Sinatra::Base
+  set :port , 80
 
 
 
