@@ -22,18 +22,25 @@ end
 helper = Helper.new
 
 class App < Sinatra::Base
+	configure :production do 
+		set :clean_trace, true
+		Dir.mkdir("logs") unless File.exist?("logs")
+		$logger = Logger.new("logs/common.log","weekly")
+		$logger.level = Logger::WARN
+		$stdout.reopen("logs/output.log","w")
+		$stdout.sync = true
+		$stdout.reopen($stdout)
+	end
+	configure :development do 
+		$logger = Logger.new(STDOUT)
+	end
 
+		
 
 
 
 Mongoid.configure do |config|
-	if ENV["MONGOHQ_URL"] 
-		uri  = URI.parse(ENV['MONGOHQ_URL'])
-		conn = Mongo::Connection.from_uri(ENV['MONGOHQ_URL'])
-		config.master = conn.db(uri.path.gsub(/^\//, ''))
-	else
 		config.connect_to("db_test")
-	end
 end
 
 get "/" do
@@ -53,7 +60,12 @@ end
 get "/users/:uuid/drinks/total_price/" do
 	content_type :json
 	user = User.find_or_create_by(:uuid => params[:uuid])
-	return {:total => user.total_price}.to_json
+	if user 
+		return {:total => user.total_price}.to_json
+	else
+		return {:total => 0.0}.to_json
+	end
+
 end
 
 
