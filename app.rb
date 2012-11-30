@@ -60,12 +60,11 @@ end
 get "/users/:uuid/drinks/total_price/" do
 	content_type :json
 	user = User.find_or_create_by(:uuid => params[:uuid])
-	if user 
+	if user.respond_to? :total_price
 		return {:total => user.total_price}.to_json
 	else
 		return {:total => 0.0}.to_json
 	end
-
 end
 
 
