@@ -67,7 +67,6 @@ get "/users/:uuid/drinks/" do
 	content_type :json
 	retryable(:tries => 3 , :on => [Errno::ECONNRESET,TimeoutError]) do
 		user = User.find_by({:uuid => params[:uuid].to_s})
-		puts params[:uuid]
 		if user.drinks.count == 0
 			error 404
 		else
