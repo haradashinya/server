@@ -5,7 +5,10 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 			initialize:function(){
 				_.bindAll(this,"removeDrink","updateDrink","render");
 				this.model.bind("change",this.changed,this);
-				$("li .remove-drink").bind("tap",this.removeDrink);
+				$("li .remove-drink").tap("tap",function(){
+						alert('tapped');
+
+				},this);
 
 			},
 			events: {
