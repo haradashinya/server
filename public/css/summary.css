@@ -277,8 +277,6 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
 
 .drink-li-green {
-  background-color: #006c00;
-  background-image: -webkit-linear-gradient(#006c00, #005700);
   color: white;
   font-size: 18px;
   font-weight: bold; }
@@ -294,6 +292,8 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
 
 .drink-li-matcha {
+  background-color: #006c00;
+  background-image: -webkit-linear-gradient(#006c00, #005700);
   color: white;
   font-size: 18px;
   font-weight: bold; }

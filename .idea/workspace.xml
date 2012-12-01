@@ -61,7 +61,7 @@
       <file leaf-file-name="summary.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/summary.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="summary.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/scss/summary.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="46" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.5">
+            <state line="99" column="28" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.6363636">
               <folding />
             </state>
           </provider>
@@ -304,14 +304,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/summary.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/scss/summary.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="46" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.5">
+        <state line="99" column="28" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.6363636">
           <folding />
         </state>
       </provider>

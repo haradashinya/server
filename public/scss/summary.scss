@@ -97,7 +97,7 @@ $cafeColor: rgba(217,121,47,1.0);
       @include gradient($cafeColor,darken($cafeColor,4%));
     }@else if $type == drip {
       @include gradient(darken($cafeColor,40%),darken($cafeColor,44%));
-    }@else if $type == green {
+    }@else if $type == matcha {
       @include gradient(darken(green,4%),darken(green,8%));
     }@else if $type == cocoa {
       @include gradient(darken($cafeColor,30%),darken($cafeColor,34%));
