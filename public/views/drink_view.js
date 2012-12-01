@@ -31,6 +31,8 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 			formatDate:function(date){
 				var d = date.split("T");
 				var time = d[1].slice(0,5);
+				var date = new Date(d + ":"+time + " UTC");
+				alert(date);
 				return d[0] + " " + time;
 			},
 			// ugly implement...
