@@ -56,10 +56,11 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 				return res;
 			},
 			removeDrink:function(){
-				setTimeout(function(){
-					this.$el.remove();
-					this.model.destroy();
-				},0);
+					var self = this;
+					setTimeout(function(){
+						self.$el.remove();
+						self.model.destroy();
+					},0);
 
 			},
 			updateDrink:function(){
