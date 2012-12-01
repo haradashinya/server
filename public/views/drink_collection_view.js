@@ -21,13 +21,14 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 			},
 			addView:function(collection){
 				var self = this;
+				document.location = "app://hideIndicator";
 				collection.models.forEach(function(item){
 					var drink = new Drink(item.toJSON());
 					var drinkView = new DrinkView({model: drink});
 					this.$el.append(drinkView.render().$el);
 				},this);
 				this.render();
-				document.location = "app://hideIndicator";
+
 			},
 			render:function(){
 				return this;
@@ -35,7 +36,8 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 			showError:function(){
 				this.$el.html("<h1 class='warning'>There's no drinks</h1>");
 				this.$el.css("text-align",'center');
-				this.$el.css("margin-top","10px");
+				this.$el.css("margin-top","150px");
+				document.location = "app://hideIndicator";
 			},
 			update:function(){
 				console.log("update");

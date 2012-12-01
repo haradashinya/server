@@ -87,7 +87,15 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 					});
 					injectItem(typeMap);
 					self.renderList(res);
+				},
+				error:function(msg){
+				  document.location = "app://hideIndicator";
+
+				self.$el.html("<h1 class='warning'>There's no drinks</h1>");
+				self.$el.css("text-align",'center');
+				self.$el.css("margin-top","150px");
 				}
+
 			});
 			return res;
 		}

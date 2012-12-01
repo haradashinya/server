@@ -19,7 +19,7 @@ define(["zepto","underscore","backbone"],function($,_,Backbone){
 			var model = this.toJSON();
 			$.ajax({
 				type: "PUT",
-				url:"http://54.248.226.131.3000/users/" + window.uuid + "/drinks/" + model._id,
+				url:"http://54.248.226.131:3000/users/" + window.uuid + "/drinks/" + model._id,
 				data: JSON.stringify(model),
 				success:function(data){
 					console.log("success update");
