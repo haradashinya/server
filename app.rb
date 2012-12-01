@@ -44,6 +44,7 @@ end
 
 
 get "/" do
+	p "hello world"
 	File.read(File.join("public","index.html"))
 end
 
@@ -103,6 +104,8 @@ end
 post "/users/:uuid/drinks/" do
 	retryable(:tries => 3, :on => [Errno::ECONNRESET,TimeoutError]) do
 		price = params[:price].to_f
+		puts params[:time]
+		p "hello woororororororororoororrororororoorroroororororooro"
 		type = params[:type].downcase.split(" ").join("_")
 		user = User.find_or_create_by(:uuid => params[:uuid])
 		user.drinks.create({:type => type,:price => price,:created_at => Time.now,:local_time => params[:date]})
