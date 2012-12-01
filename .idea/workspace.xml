@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log" afterPath="$PROJECT_DIR$/log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/drink_view.js" afterPath="$PROJECT_DIR$/public/views/drink_view.js" />
     </list>
     <ignored path="server.iws" />
@@ -54,7 +52,7 @@
       <file leaf-file-name="drink_view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/drink_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="480" selection-end="480" vertical-scroll-proportion="0.26928473">
+            <state line="7" column="57" selection-start="404" selection-end="404" vertical-scroll-proportion="0.15708275">
               <folding />
             </state>
           </provider>
@@ -280,7 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/drink_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="480" selection-end="480" vertical-scroll-proportion="0.26928473">
+        <state line="7" column="57" selection-start="404" selection-end="404" vertical-scroll-proportion="0.15708275">
           <folding />
         </state>
       </provider>
