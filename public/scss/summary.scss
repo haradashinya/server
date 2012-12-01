@@ -91,7 +91,7 @@ $cafeColor: rgba(217,121,47,1.0);
   @return darken($color,4%);
 }
 
-@each $type in cafe,drip,cocoa,tea,green {
+@each $type in cafe,drip,cocoa,tea,green,matcha {
   .drink-li-#{$type} {
     @if $type == cafe {
       @include gradient($cafeColor,darken($cafeColor,4%));
