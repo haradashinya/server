@@ -2,7 +2,7 @@ define(["zepto","underscore","backbone","drink"],
 	function($,_,Backbone,Drink){
 		var DrinkCollection = Backbone.Collection.extend({
 			url:function(){
-				return "http://localhost:9393/users/" + window.uuid +  "/drinks/";
+				return "http://54.248.226.131:3000/users/" + window.uuid + "/drinks/";
 			},
 			initialize:function(uuid){
 			},
