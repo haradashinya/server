@@ -1,5 +1,4 @@
 require "rubygems"
-require "pry"
 require "mongoid"
 require "sinatra/base"
 require "sinatra"
@@ -22,7 +21,7 @@ end
 helper = Helper.new
 
 class App < Sinatra::Base
-	configure :production do 
+	configure  do 
 		set :clean_trace, true
 		Dir.mkdir("logs") unless File.exist?("logs")
 		$logger = Logger.new("logs/common.log","weekly")
@@ -31,9 +30,11 @@ class App < Sinatra::Base
 		$stdout.sync = true
 		$stdout.reopen($stdout)
 	end
-	configure :development do 
-		$logger = Logger.new(STDOUT)
-	end
+
+	enable :logging, :dump_errors, :raise_errors
+	log = File.new("log","a")
+	STDOUT.reopen(log)
+	STDOUT.reopen(log)
 
 		
 
@@ -56,6 +57,9 @@ post "/users/" do
 	return user
 end
 
+get "/hello" do
+return "hello"
+end
 
 get "/users/:uuid/drinks/total_price/" do
 	content_type :json

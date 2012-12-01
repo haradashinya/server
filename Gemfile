@@ -11,6 +11,7 @@ gem "mongoid"
 gem "pry"
 gem "mongo"
 gem "rspec"
+gem 'unicorn'
 gem "rack-test"
 gem 'bson_ext'
 gem 'retryable'
