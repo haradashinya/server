@@ -9,6 +9,7 @@ gem 'foreman'
 gem 'heroku'
 gem "mongoid"
 gem "pry"
+gem 'rb-readline'
 gem "mongo"
 gem "rspec"
 gem 'unicorn'

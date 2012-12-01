@@ -7,6 +7,7 @@ require "retryable"
 require File.join(File.dirname(__FILE__),"models","user")
 require File.join(File.dirname(__FILE__),"models","drink")
 require "mongo"
+require "pry"
 
 UUID = ""
 
@@ -36,20 +37,15 @@ class App < Sinatra::Base
 	STDOUT.reopen(log)
 	STDOUT.reopen(log)
 
-		
-
-
-
 Mongoid.configure do |config|
 		config.connect_to("db_test")
+
 end
+
 
 get "/" do
 	File.read(File.join("public","index.html"))
 end
-
-
-
 
 post "/users/" do
 	helper.uuid = params[:uuid]
@@ -109,7 +105,7 @@ post "/users/:uuid/drinks/" do
 		price = params[:price].to_f
 		type = params[:type].downcase.split(" ").join("_")
 		user = User.find_or_create_by(:uuid => params[:uuid])
-		user.drinks.create({:type => type,:price => price})
+		user.drinks.create({:type => type,:price => price,:created_at => Time.now,:local_time => params[:date]})
 	end
 end
 

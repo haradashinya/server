@@ -8,6 +8,7 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 			},
 			events: {
 				"click li .remove-drink": "removeDrink",
+				"click .update-drink": "updateDrink"
 			},
 			render:function(){
 				var className = "drink-li-"+this.model.get("type").split("_")[0];
@@ -28,7 +29,10 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 				return this;
 			},
 			formatDate:function(date){
-				return this.model.get("local_time");
+				var d = date.split("T");
+				var time = d[1].slice(0,5);
+				alert(time);
+				return d[0] + " " + time;
 			},
 			// ugly implement...
 			formatTitle:function(str){
@@ -59,6 +63,8 @@ define(["zepto","underscore","backbone","lib/text!templates/drink_view.html","li
 				this.model.destroy();
 			},
 			updateDrink:function(){
+				this.model.set({type: "nobi"});
+				this.model.trigger("update");
 			},
 			changed:function(){
 				this.render();

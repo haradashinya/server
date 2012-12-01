@@ -6,6 +6,7 @@ class Drink
 
 	field :price , :type => Float
 	field :type
+	field :local_time
 
 
 

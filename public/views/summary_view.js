@@ -82,6 +82,9 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 			this.collection.fetch({
 				success:function(data){
 					var typeMap = self.collection.incCountByType();
+					data.map(function(item){
+						console.log(item.toJSON());
+					});
 					injectItem(typeMap);
 					self.renderList(res);
 				}
