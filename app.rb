@@ -58,7 +58,6 @@ get "/" do
 end
 
 
-
 post "/users/" do
 	helper.uuid = params[:uuid]
 	user = User.find_or_create_by(:uuid => helper.uuid)
