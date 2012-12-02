@@ -101,3 +101,9 @@ destroy drink
 "hello world"
 "hello world"
 "hello world"
+"hello world"
+"hello world"
+"hello world"
+"hello world"
+{:inner_app=>App}
+"hello world"
