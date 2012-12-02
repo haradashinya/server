@@ -47,7 +47,8 @@ get "/" do
 	File.read(File.join("public","index.html"))
 end
 
-get "/fook" do
+get "/deploy" do
+	`echo "hello"`
 	`git pull`
 end
 
