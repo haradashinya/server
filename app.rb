@@ -42,8 +42,8 @@ Mongoid.configure do |config|
 end
 
 post "/deploy" do
-	p params[:payload]
-	p "hello world"
+	`echo  #{params[:payload]}`
+	`echo "hello world"`
 	`cd /var/www/html/server`
 	`git pull origin master`
 
