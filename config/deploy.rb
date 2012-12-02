@@ -1,38 +1,20 @@
-$:.unshift(File.expand_path("./lib",ENV["rvm_path"]))
-require "rvm/capistrano"
-require "bundler/capisrano"
-
 
 set :application, "server"
+set :repository,  "/var/www/html/server"
+set :local_repository, "Users/haradashinya/project/server"
 
+set :git
 
-set :user , "ec2-user"
-set :group,user
-set :runner,user
-set :user_sudo,true
+role :web,"http://54.248.226.131:3000/"
+role :app,"http://54.248.226.131:3000/"
+role :db,"http://54.248.226.131:3000/"
 
-set :scm,:git
-set :repository, "git@github.com:okamurayasuyuki/server.git"
-set :branch , "master"
-set :git_shallow_clone , 1
+after "deploy:restart", "deploy:cleanup"
 
-role :web,domain
-role :app,domain
-role :db, domain, :primary => true
-
-set :deploy_via, :remote_cache
-set :deploy_to , "/var/www/html/server/"
-set :unicorn_conf, "#{deploy_to}/unicorn.rb"
-set :unicorn_pid, "#{deploy_to}/unicorn.pid"
-
-
-
-namespace :deploy do
-	task :start do ; end
-	task :stop do ; end
-
-	task :restart, :roles => :app do
-
-	end
-end
-
+ namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
