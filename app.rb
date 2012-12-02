@@ -33,9 +33,6 @@ class App < Sinatra::Base
 	end
 
 	enable :logging, :dump_errors, :raise_errors
-	log = File.new("log","a")
-	STDOUT.reopen(log)
-	STDOUT.reopen(log)
 
 Mongoid.configure do |config|
 		config.connect_to("db_test")
@@ -43,13 +40,10 @@ end
 
 post "/deploy" do
 	`echo  #{params[:payload]}`
+	$stdout.puts JSON.parse(params[:payload])
 	`echo "hello world"`
 	`cd /var/www/html/server`
 	`git pull origin master`
-	File.write("log.txt","hello")
-
-
-
 end
 
 
