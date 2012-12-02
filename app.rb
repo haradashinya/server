@@ -41,6 +41,15 @@ Mongoid.configure do |config|
 		config.connect_to("db_test")
 end
 
+post "/deploy" do
+	puts JSON.parse(params[:payload])
+
+	`git pull`
+
+end
+
+
+
 
 get "/" do
 	p "hello world"
