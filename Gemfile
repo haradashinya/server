@@ -5,6 +5,7 @@ source "https://rubygems.org"
 #
 gem "sinatra"
 gem 'passenger'
+gem 'capistrano'
 gem 'foreman'
 gem 'heroku'
 gem "mongoid"

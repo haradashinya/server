@@ -39,7 +39,6 @@ class App < Sinatra::Base
 
 Mongoid.configure do |config|
 		config.connect_to("db_test")
-
 end
 
 
