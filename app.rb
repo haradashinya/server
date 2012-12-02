@@ -47,10 +47,6 @@ get "/" do
 	File.read(File.join("public","index.html"))
 end
 
-post "/deploy" do
-	`echo "hello"`
-	`git pull`
-end
 
 post "/users/" do
 	helper.uuid = params[:uuid]
