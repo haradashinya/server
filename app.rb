@@ -43,7 +43,8 @@ end
 
 post "/deploy" do
 	p params[:payload]
-
+	p "hello world"
+	`cd /var/www/html/server`
 	`git pull`
 
 end
