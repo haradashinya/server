@@ -42,6 +42,7 @@ post "/deploy" do
 	`echo  #{params[:payload]}`
 	$stdout.puts JSON.parse(params[:payload])
 	`echo "hello world"`
+	`echo JSON.parse(params[:payload])`
 	`cd /var/www/html/server`
 	`git pull origin master`
 end
