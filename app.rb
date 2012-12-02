@@ -46,6 +46,9 @@ post "/deploy" do
 	`echo "hello world"`
 	`cd /var/www/html/server`
 	`git pull origin master`
+	File.write("log.txt","hello")
+
+
 
 end
 
