@@ -41,15 +41,22 @@ Mongoid.configure do |config|
 		config.connect_to("db_test")
 end
 
+post "/deploy" do
+	puts JSON.params[:payload]
+
+	`git pull`
+
+end
+
+
+
 
 get "/" do
 	p "hello world"
 	File.read(File.join("public","index.html"))
 end
 
-get "/fook" do
-	`git pull`
-end
+
 
 post "/users/" do
 	helper.uuid = params[:uuid]
