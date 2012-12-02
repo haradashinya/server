@@ -47,6 +47,10 @@ get "/" do
 	File.read(File.join("public","index.html"))
 end
 
+get "/fook" do
+	`git pull`
+end
+
 post "/users/" do
 	helper.uuid = params[:uuid]
 	user = User.find_or_create_by(:uuid => helper.uuid)
