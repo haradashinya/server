@@ -1,10 +1,7 @@
 #!/bin/sh
 
-ssh -i /Users/haradashinya/haradashinya.pem ec2-user@54.248.226.131
-sudo su
-cd /var/www/html/server
-git pull
 
+echo "hello"
 
 
 
