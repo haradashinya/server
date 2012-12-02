@@ -42,7 +42,7 @@ Mongoid.configure do |config|
 end
 
 post "/deploy" do
-	puts JSON.params[:payload]
+	p params[:payload]
 
 	`git pull`
 
