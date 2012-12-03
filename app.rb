@@ -39,8 +39,6 @@ Mongoid.configure do |config|
 end
 
 post "/deploy" do
-	$stdout.puts JSON.parse(params[:payload])
-	`git pull origin master`
 end
 
 
