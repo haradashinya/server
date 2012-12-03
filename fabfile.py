@@ -8,20 +8,24 @@ env.user = "haradashinya"
 env.hosts = ["ec2-user@54.248.226.131"]
 env.key_filename = ["%s/haradashinya.pem" % HOME]
 
+
+# when run cmd is success, then alert trigger terminal-notifier.
+# (sudo gem install terminal-notifier)
+# host_type: local,sudo
+
+def try_cmd(host_type,cmd):
+		run_cmd = host_type(cmd)
+		if run_cmd.failed:
+			host_type("terminal-notifier -message '%s'" % run_cmd.stdout)
+		else:
+			host_type("terminal-notifier -message 'success: %s'"  % cmd)
+
 def host_type():
 	run("uname -s")
-
 
 # git push and run git pull in the remote machine.
 def push():
 	with settings(warn_only=True):
-		is_local_push = local("git push &")
-		if is_local_push.failed:
-			local("terminal-notifier -message '%s' " % is_local_push.stdout)
-
+		try_cmd(local,"git push")
 		with cd("/var/www/html/server"):
-				is_pull = sudo("git pull origin master ")
-				if is_pull.failed:
-					local("terminal-notifier -message '%s' " % is_pull.stdout)
-				else:
-					local("terminal-notifier -message 'succes' ")
+			try_cmd(sudo,"git pull origin master")
