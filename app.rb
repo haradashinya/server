@@ -7,7 +7,6 @@ require "retryable"
 require File.join(File.dirname(__FILE__),"models","user")
 require File.join(File.dirname(__FILE__),"models","drink")
 require "mongo"
-require "pry"
 
 UUID = ""
 
@@ -39,8 +38,6 @@ Mongoid.configure do |config|
 end
 
 post "/deploy" do
-	$stdout.puts JSON.parse(params[:payload])
-	`git pull origin master`
 end
 
 
