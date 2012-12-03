@@ -1,5 +1,4 @@
-from fabric.api import run , env
-from fabric.api import local
+from fabric.api import run,env,local
 from fabric.operations import sudo
 from fabric.context_managers import cd
 import os
@@ -21,8 +20,11 @@ def update():
 def deploy():
 	local("git push")
 	with cd("/var/www/html/server"):
-		sudo("git pull origin master")
-	local("terminal-notifier -message 'deploy success'")
+		is_pull = sudo("git pull origin master")
+		if is_pull.failed:
+			local("terminal-notifier -message 'deploy failed")
+		else:
+			local("terminal-notifier -message 'deploy success'")
 
 def push():
 	with cd("/var/www/html/server"):
