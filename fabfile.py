@@ -17,20 +17,15 @@ def update():
 		sudo("git pull")
 
 # git push and run git pull in the remote machine.
-def deploy():
+def push():
 	with settings(warn_only=True):
-		local("git push")
+		is_local_push = local("git push")
+		if is_local_push.failed:
+			local("terminal-notifier -message '%s'" % is_local_push.stdout)
+
 		with cd("/var/www/html/server"):
 				is_pull = sudo("git pul origin master")
 				if is_pull.failed:
-					local("terminal-notifier -message 'failed'")
 					local("terminal-notifier -message '%s'" % is_pull.stdout)
-					print "error"
 				else:
 					local("terminal-notifier -message 'succes'")
-					print "failed"
-
-
-def push():
-	with cd("/var/www/html/server"):
-		sudo("git pull")
