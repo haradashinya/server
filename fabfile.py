@@ -16,9 +16,9 @@ env.key_filename = ["%s/haradashinya.pem" % HOME]
 def try_cmd(host_type,cmd):
 		run_cmd = host_type(cmd)
 		if run_cmd.failed:
-			host_type("terminal-notifier -message '%s'" % run_cmd.stdout)
+			local("terminal-notifier -message '%s'" % run_cmd.stdout)
 		else:
-			host_type("terminal-notifier -message 'success: %s'"  % cmd)
+			local("terminal-notifier -message 'success: %s'"  % cmd)
 
 def host_type():
 	run("uname -s")
