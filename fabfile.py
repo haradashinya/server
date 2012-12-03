@@ -21,7 +21,7 @@ def deploy():
 	local("git push")
 	with cd("/var/www/html/server"):
 		try:
-			is_pull = sudo("git pul origin master")
+			is_pull = sudo("git pull origin master")
 			local("terminal-notifier -message 'deploy success'")
 		except Exception as e:
 			print("failed")
