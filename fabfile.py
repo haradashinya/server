@@ -23,7 +23,6 @@ def deploy():
 		try:
 			is_pull = sudo("git pul origin master")
 			local("terminal-notifier -message 'deploy success'")
-			break
 		except Exception as e:
 			local("terminal-notifier -message 'deploy failed'")
 
