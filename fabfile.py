@@ -24,7 +24,7 @@ def push():
 			local("terminal-notifier -message '%s'" % is_local_push.stdout)
 
 		with cd("/var/www/html/server"):
-				is_pull = sudo("git pul origin master")
+				is_pull = sudo("git pull origin master")
 				if is_pull.failed:
 					local("terminal-notifier -message '%s'" % is_pull.stdout)
 				else:
