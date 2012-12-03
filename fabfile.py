@@ -11,15 +11,11 @@ env.key_filename = ["%s/haradashinya.pem" % HOME]
 def host_type():
 	run("uname -s")
 
-# remote update
-def update():
-	with cd("/var/www/html/server"):
-		sudo("git pull")
 
 # git push and run git pull in the remote machine.
 def push():
 	with settings(warn_only=True):
-		is_local_push = local("git push")
+		is_local_push = local("git push &")
 		if is_local_push.failed:
 			local("terminal-notifier -message '%s' &" % is_local_push.stdout)
 
