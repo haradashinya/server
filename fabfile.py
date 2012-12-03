@@ -21,7 +21,7 @@ def push():
 	with settings(warn_only=True):
 		is_local_push = local("git push")
 		if is_local_push.failed:
-			local("terminal-notifier -message '%s'" % is_local_push.stdout)
+			local("terminal-notifier -message '%s' &" % is_local_push.stdout)
 
 		with cd("/var/www/html/server"):
 				is_pull = sudo("git pull origin master &")
