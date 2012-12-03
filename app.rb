@@ -7,7 +7,6 @@ require "retryable"
 require File.join(File.dirname(__FILE__),"models","user")
 require File.join(File.dirname(__FILE__),"models","drink")
 require "mongo"
-require "pry"
 
 UUID = ""
 
