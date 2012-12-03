@@ -6,7 +6,7 @@ import os
 HOME = os.getenv("HOME")
 env.user = "haradashinya"
 env.hosts = ["ec2-user@54.248.226.131"]
-env.key_filename = ["%s/haradashinya.pem"%HOME]
+env.key_filename = ["%s/haradashinya.pem" % HOME]
 
 def host_type():
 	run("uname -s")
@@ -17,7 +17,7 @@ def update():
 		sudo("git pull")
 
 # git push and run git pull in the remote machine.
-def push():
+def deploy():
 	with settings(warn_only=True):
 		local("git push")
 		with cd("/var/www/html/server"):
