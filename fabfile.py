@@ -20,11 +20,12 @@ def update():
 def deploy():
 	local("git push")
 	with cd("/var/www/html/server"):
-		is_pull = sudo("git pul origin master")
-		if is_pull.failed:
-			local("terminal-notifier -message 'deploy failed")
-		else:
+		try:
+			is_pull = sudo("git pul origin master")
 			local("terminal-notifier -message 'deploy success'")
+			break
+		except Exception as e:
+			local("terminal-notifier -message 'deploy failed'")
 
 def push():
 	with cd("/var/www/html/server"):
