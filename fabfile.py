@@ -21,11 +21,12 @@ def deploy():
 	with settings(warn_only=True):
 		local("git push")
 		with cd("/var/www/html/server"):
-				is_pull = sudo("git pull origin master")
+				is_pull = sudo("git pul origin master")
 				if is_pull.return_code != 0:
 					local("terminal-notifier -message 'deploy failed'")
 				else:
-					local("terminal-notifier -message 'deploy success'")
+					err_msg = result.stdout
+					local("terminal-notifier -message '%s'" % err_msg)
 
 
 def push():
