@@ -20,7 +20,6 @@ def update():
 def deploy():
 	local("git push")
 	with cd("/var/www/html/server"):
-		try:
 			is_pull = sudo("git pul origin master")
 			print(is_pull.return_code)
 			local("terminal-notifier -message 'deploy success'")
