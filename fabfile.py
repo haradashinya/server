@@ -23,10 +23,11 @@ def deploy():
 		with cd("/var/www/html/server"):
 				is_pull = sudo("git pul origin master")
 				if is_pull.failed:
-					local("terminal_notifier -message 'failed'")
+					local("terminal-notifier -message 'failed'")
+					local("terminal-notifier -message '%s'" % is_pull.stdout)
 					print "error"
 				else:
-					local("terminal_notifier -message 'succes'")
+					local("terminal-notifier -message 'succes'")
 					print "failed"
 
 
