@@ -28,4 +28,4 @@ def push():
 	with settings(warn_only=True):
 		try_cmd(local,"git push")
 		with cd("/var/www/html/server"):
-			try_cmd(sudo,"git pull origin master")
+			try_cmd(run,"git pull origin master")
