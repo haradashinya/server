@@ -18,7 +18,7 @@ def update():
 		sudo("git pull")
 
 def deploy():
-	local("sudo git push")
+	local("git push")
 	with cd("/var/www/html/server"):
 		sudo("git pull origin master")
 		sudo("pwd")
