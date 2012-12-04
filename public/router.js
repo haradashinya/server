@@ -15,6 +15,9 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 				window.uuid = uuid;
 				window.drinkCollectionView = new DrinkCollectionView({collection: drinks});
 				$("#content").html(window.drinkCollectionView.$el);
+				setTimeout(function(){
+					alert("called");
+				},1000);
 
 			},
 			showSummary:function(uuid){
