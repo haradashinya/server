@@ -12,6 +12,7 @@ gem "mongoid"
 gem "pry"
 gem 'rb-readline'
 gem "mongo"
+gem 'fast_xs'
 gem "rspec"
 gem 'unicorn'
 gem "rack-test"
