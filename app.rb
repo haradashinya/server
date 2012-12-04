@@ -41,8 +41,6 @@ post "/deploy" do
 end
 
 
-
-
 get "/" do
 	File.read(File.join("public","index.html"))
 end
