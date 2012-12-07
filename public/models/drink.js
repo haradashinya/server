@@ -4,6 +4,7 @@ define(["zepto","underscore","backbone"],function($,_,Backbone){
 			_.bindAll(this,"removeDrink");
 			this.on("destroy",this.removeDrink,this);
 			this.on("update",this.updateDrink,this);
+			console.log(this.collection);
 		},
 		removeDrink:function(){
 			var model = this.toJSON();
@@ -12,6 +13,7 @@ define(["zepto","underscore","backbone"],function($,_,Backbone){
 				url:"http://54.248.226.131:3000/users/" + window.uuid + "/drinks/" + model._id,
 				success:function(data){
 					console.log("removed drinks successfully");
+
 				}
 			})
 		},

@@ -5,13 +5,13 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 		var options = {};
 		var compiledTemplate = _.template(template,options);
 
+
 		var DrinkCollectionView = Backbone.View.extend({
 			// look for templates/edit_drink.html
 			tagName: "ul",
 			className:"list",
 			initialize:function(){
 				_.bindAll(this,"render","update","refresh");
-//				document.location = "app://showIndicator";
 				this.collection.fetch({
 					success:$.proxy(this.addView,this),
 					error:$.proxy(this.showError,this)
@@ -43,7 +43,6 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 				console.log("update");
 			},
 			refresh:function(){
-				alert("refreshed");
 
 			}
 		});
