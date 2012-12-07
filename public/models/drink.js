@@ -4,7 +4,6 @@ define(["zepto","underscore","backbone"],function($,_,Backbone){
 			_.bindAll(this,"removeDrink");
 			this.on("destroy",this.removeDrink,this);
 			this.on("update",this.updateDrink,this);
-			console.log(this.collection);
 		},
 		removeDrink:function(){
 			var model = this.toJSON();

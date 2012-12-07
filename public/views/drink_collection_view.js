@@ -22,11 +22,17 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 			addView:function(collection){
 				var self = this;
 				document.location = "app://hideIndicator";
-				collection.models.forEach(function(item){
+				if (collection.models.length === 0){
+					this.showError();
+				}else{
+					collection.models.forEach(function(item){
 					var drink = new Drink(item.toJSON());
 					var drinkView = new DrinkView({model: drink});
 					this.$el.append(drinkView.render().$el);
 				},this);
+
+				}
+
 				this.render();
 
 			},
