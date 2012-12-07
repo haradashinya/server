@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/c" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/router.js" afterPath="$PROJECT_DIR$/public/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/drink_collection_view.js" afterPath="$PROJECT_DIR$/public/views/drink_collection_view.js" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,19 +24,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.3936324">
+            <state line="13" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drink_collection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
+      <file leaf-file-name="drink_collection_view.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/views/drink_collection_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0">
+            <state line="14" column="18" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3181818">
               <folding />
             </state>
           </provider>
@@ -97,6 +98,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="drink_collection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="31" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -116,6 +126,7 @@
         <option value="$PROJECT_DIR$/public/views/drink_view.js" />
         <option value="$PROJECT_DIR$/public/scss/summary.scss" />
         <option value="$PROJECT_DIR$/public/router.js" />
+        <option value="$PROJECT_DIR$/public/views/drink_collection_view.js" />
       </list>
     </option>
   </component>
@@ -150,7 +161,10 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ColorIdeProjectViewPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -250,13 +264,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="39" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
@@ -359,7 +366,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.3936324">
+        <state line="13" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/drink_collection_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="18" selection-start="588" selection-end="588" vertical-scroll-proportion="0.3181818">
           <folding />
         </state>
       </provider>

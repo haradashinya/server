@@ -11,7 +11,7 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 			className:"list",
 			initialize:function(){
 				_.bindAll(this,"render","update","refresh");
-				document.location = "app://showIndicator";
+//				document.location = "app://showIndicator";
 				this.collection.fetch({
 					success:$.proxy(this.addView,this),
 					error:$.proxy(this.showError,this)
