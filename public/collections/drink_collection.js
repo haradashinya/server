@@ -9,9 +9,18 @@ define(["zepto","underscore","backbone","drink","const"],
 			initialize:function(uuid){
                   console.log(window.baseURL);
 			},
-			incCountByType:function(){
+      // opts {month: true}
+			incCountByType:function(opts){
+        var drinks;
+        if(opts === "month"){
+          drinks = this.drinksByFilteredThisMonth();
+        }else{
+          drinks = this.toJSON();
+        }
+
+        drinks = this.toJSON();
 				var typeMap = {};
-				var drinks = this.drinksByFilteredThisMonth();
+
 				// if type is undefined , then inclement count
 				drinks.forEach(function(drink){
 					if (typeMap[drink.type] !== undefined){

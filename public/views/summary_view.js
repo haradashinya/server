@@ -91,9 +91,16 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
       return this;
     },
 
-		fetchDrinks:function(callback){
+    // opts {month: true}
+		fetchDrinks:function(callback,opts){
 			var self = this;
-			var typeMap = this.collection.incCountByType();
+      var typeMap;
+      // if set month flag true, then typeMap set only this month's data
+      if (opts.month){
+        typeMap = this.collection.incCountByType("month");
+      }else{
+        typeMap = this.collection.incCountByType();
+      }
 			self.res = [];
 			var injectItem = function(typeMap){
 				Object.keys(typeMap).forEach(function(item){

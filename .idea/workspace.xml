@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/collections/drink_collection.js" afterPath="$PROJECT_DIR$/public/collections/drink_collection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/router.js" afterPath="$PROJECT_DIR$/public/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/summary_view.js" afterPath="$PROJECT_DIR$/public/views/summary_view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -9,15 +10,15 @@
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454064187" ignored="false" />
-    <file path="/drink_collection.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449253752" ignored="false" />
+    <file path="/drink_collection.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355465485425" ignored="false" />
     <file path="/config.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449080349" ignored="false" />
     <file path="/const.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449126196" ignored="false" />
     <file path="/index.html" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449201594" ignored="false" />
     <file path="/drink_collection_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449227315" ignored="false" />
     <file path="/drink.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449467232" ignored="false" />
-    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355455196139" ignored="false" />
+    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355464621945" ignored="false" />
     <file path="/a.dummy" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355452354159" ignored="false" />
-    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355464392768" ignored="false" />
+    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355465380168" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,16 +81,16 @@
       <file leaf-file-name="summary_view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="8" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
+            <state line="99" column="49" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.6507714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/router.js">
+      <file leaf-file-name="drink_collection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="35" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
+            <state line="14" column="25" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,11 +119,11 @@
         <option value="$PROJECT_DIR$/public/config.js" />
         <option value="$PROJECT_DIR$/public/const.js" />
         <option value="$PROJECT_DIR$/public/views/drink_collection_view.js" />
-        <option value="$PROJECT_DIR$/public/collections/drink_collection.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/models/drink.js" />
         <option value="$PROJECT_DIR$/public/router.js" />
         <option value="$PROJECT_DIR$/public/views/summary_view.js" />
+        <option value="$PROJECT_DIR$/public/collections/drink_collection.js" />
       </list>
     </option>
   </component>
@@ -410,23 +411,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
+    <entry file="file://$PROJECT_DIR$/public/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="342" selection-end="342" vertical-scroll-proportion="0.022038568">
+        <state line="35" column="58" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.78541374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/router.js">
+    <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
+        <state line="14" column="25" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="8" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
+        <state line="99" column="49" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.6507714">
           <folding />
         </state>
       </provider>
