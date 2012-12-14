@@ -20,6 +20,7 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 			showSummary:function(uuid){
 				window.uuid = uuid;
 				var summaryView = new SummaryView({collection: drinks});
+        summaryView.fetchDrinks("renderList");
 				$("#content").html(summaryView.el);
 			},
 			showSummaryAll: function(uuid,all){

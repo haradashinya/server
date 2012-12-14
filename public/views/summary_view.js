@@ -2,7 +2,7 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 	var SummaryView = Backbone.View.extend({
 			initialize:function(){
 				this.renderInit();
-				this.fetchDrinks("renderList");
+//				this.fetchDrinks("renderList");
 			},
 			types: ["drip_coffee","cafe_late"],
 		  // create base template
