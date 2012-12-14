@@ -72,11 +72,27 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 
 			return this;
 		},
-    renderMonth:function(){
-      if(!window.cachedRes)this.fetchDrinks();
-      var res = window.cachedRes;
-      console.log(res);
+    // data : received collection
+    renderMonth:function(data){
+      var dom = "";
+      var cnt = 0;
+      var sortedData = _.sortBy(data,function(item){
+        return item.count * -1;
+      });
 
+      sortedData.forEach(function(item){
+        cnt += 1;
+        var className = "drink-count"+cnt;
+        var tmp = _.template("<li class='summary-li'><%= type %><div class=<%= className %> ><%= count %></div></div>",{
+          type: this.formatType(item.type),
+          count: item.count,
+          className: className
+        });
+        dom += tmp;
+
+        console.log(dom);
+      },this);
+      this.$el.find("#summary-list").html(dom);
       return this;
     },
 
