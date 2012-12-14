@@ -8,7 +8,7 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 			routes: {
 				"users/:uuid/drinks/edit": "editDrink",
 				"users/:uuid/drinks/summary":"showSummary",
-				"users/:uuid/drinks/summary*all":"showSummaryAll"
+				"users/:uuid/drinks/summary/month":"showSummaryAll"
 			},
 
 			editDrink:function(uuid){
@@ -23,6 +23,9 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 				$("#content").html(summaryView.el);
 			},
 			showSummaryAll: function(uuid,all){
+        window.uuid = uuid;
+        console.log("called");
+        window.collection = this.collection;
 				var summaryView = new SummaryView({collection: drinks});
 				$("#content").html(summaryView.renderAll().el);
 
