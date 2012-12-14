@@ -8,16 +8,16 @@
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355451586055" ignored="false" />
+    <file path="/Dummy.txt" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454064187" ignored="false" />
     <file path="/drink_collection.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449253752" ignored="false" />
     <file path="/config.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449080349" ignored="false" />
     <file path="/const.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449126196" ignored="false" />
     <file path="/index.html" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449201594" ignored="false" />
     <file path="/drink_collection_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449227315" ignored="false" />
     <file path="/drink.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449467232" ignored="false" />
-    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355452819136" ignored="false" />
+    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454265403" ignored="false" />
     <file path="/a.dummy" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355452354159" ignored="false" />
-    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355453530499" ignored="false" />
+    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454205870" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,37 +77,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="summary_view.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="summary_view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="22" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.103225805">
+            <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drink_collection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
+      <file leaf-file-name="router.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="const.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/const.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="40" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
+            <state line="22" column="39" selection-start="840" selection-end="840" vertical-scroll-proportion="0.47545582">
               <folding />
             </state>
           </provider>
@@ -139,8 +121,8 @@
         <option value="$PROJECT_DIR$/public/collections/drink_collection.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/models/drink.js" />
-        <option value="$PROJECT_DIR$/public/router.js" />
         <option value="$PROJECT_DIR$/public/views/summary_view.js" />
+        <option value="$PROJECT_DIR$/public/router.js" />
       </list>
     </option>
   </component>
@@ -164,7 +146,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="All" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -176,6 +158,25 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane />
       </pane>
@@ -213,16 +214,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ColorIdeProjectViewPane" />
     </panes>
   </component>
@@ -231,9 +222,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="coverage" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -254,7 +245,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -272,6 +262,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -398,6 +389,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="4" selection-start="630" selection-end="630" vertical-scroll-proportion="0.47019866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/const.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="40" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0">
@@ -407,35 +412,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.6537634">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="630" selection-end="630" vertical-scroll-proportion="0.47019866">
+        <state line="21" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.338843">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+        <state line="11" column="23" selection-start="342" selection-end="342" vertical-scroll-proportion="0.022038568">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
+    <entry file="file://$PROJECT_DIR$/public/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="22" selection-start="1912" selection-end="1912" vertical-scroll-proportion="0.103225805">
+        <state line="22" column="39" selection-start="840" selection-end="840" vertical-scroll-proportion="0.47545582">
           <folding />
         </state>
       </provider>
