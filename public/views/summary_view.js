@@ -97,6 +97,7 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
       var typeMap;
       // if set month flag true, then typeMap set only this month's data
       if (opts === "month"){
+        console.log(this);
         typeMap = this.collection.incCountByType(opts);
       }else{
         typeMap = this.collection.incCountByType();

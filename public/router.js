@@ -31,9 +31,11 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 			showSummaryMonth: function(uuid,all){
         // for debug
         window.uuid = uuid;
-        console.log(Array.isArray(drinks));
         //if  summaryView instance does not exist, then create new instance.
-        if(!summaryView)  summaryView = new SummaryView({collection: drinks});
+        if(!summaryView) {
+          console.log("called new instance");
+          summaryView = new SummaryView({collection: drinks});
+        }
 
         summaryView.fetchDrinks("renderMonth","month");
 				$("#content").html(summaryView.el);
