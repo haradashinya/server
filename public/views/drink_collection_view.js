@@ -6,6 +6,7 @@ define(["zepto","underscore","backbone","lib/text!templates/edit_drink.html",
 		var compiledTemplate = _.template(template,options);
 
 
+
 		var DrinkCollectionView = Backbone.View.extend({
 			// look for templates/edit_drink.html
 			tagName: "ul",

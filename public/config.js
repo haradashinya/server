@@ -9,7 +9,8 @@ require.config({
 			drink_view:"views/drink_view",
 			drink:"models/drink",
 			header_view:"views/header_view",
-			router: "router"
+			router: "router",
+      const: "const"
 		},
 		shim: {
 			"backbone":{

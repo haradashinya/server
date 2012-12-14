@@ -1,10 +1,13 @@
-define(["zepto","underscore","backbone","drink"],
+define(["zepto","underscore","backbone","drink","const"],
 	function($,_,Backbone,Drink){
 		var DrinkCollection = Backbone.Collection.extend({
 			url:function(){
-				return "http://54.248.226.131:3000/users/" + window.uuid + "/drinks/";
+
+        return window.baseURL + "/users/" + window.uuid + "/drinks/";
+
 			},
 			initialize:function(uuid){
+                  console.log(window.baseURL);
 			},
 			incCountByType:function(){
 				var typeMap = {};

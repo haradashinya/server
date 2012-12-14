@@ -1,0 +1,1 @@
+window.baseURL = "http://localhost:9393";
