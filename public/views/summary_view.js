@@ -37,6 +37,8 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 			},
 		// show each typeMap {drinkType: count}
 			renderList:function(data){
+        // cached data
+        this.cachedData = data;
 				document.location = "app://showIndicator";
 				//add for debug
 				var dom = "";
@@ -67,8 +69,16 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 			},
 		renderAll:function(data){
 
+
 			return this;
 		},
+    renderMonth:function(){
+      if(!window.cachedRes)this.fetchDrinks();
+      var res = window.cachedRes;
+      console.log(res);
+
+      return this;
+    },
 
 		fetchDrinks:function(){
 			var self = this;
@@ -81,19 +91,17 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 			};
 			this.collection.fetch({
 				success:function(data){
+
 					var typeMap = self.collection.incCountByType();
-					data.map(function(item){
-						console.log(item.toJSON());
-					});
 					injectItem(typeMap);
+          if(!window.cachedRes) window.cachedRes = res;
 					self.renderList(res);
 				},
 				error:function(msg){
 				  document.location = "app://hideIndicator";
-
-				self.$el.html("<h1 class='warning'>There's no drinks</h1>");
-				self.$el.css("text-align",'center');
-				self.$el.css("margin-top","150px");
+          self.$el.html("<h1 class='warning'>There's no drinks</h1>");
+          self.$el.css("text-align",'center');
+          self.$el.css("margin-top","150px");
 				}
 
 			});
