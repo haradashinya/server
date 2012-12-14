@@ -58,6 +58,7 @@ end
 
 get "/users/:uuid/drinks/total_price/" do
 	content_type :json
+	puts "hello world"
 	user = User.find_or_create_by(:uuid => params[:uuid])
 	if user.respond_to? :total_price
 		return {:total => user.total_price}.to_json
