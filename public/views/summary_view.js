@@ -38,7 +38,6 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 		// show each typeMap {drinkType: count}
 			renderList:function(data){
         // cached data
-        this.cachedData = data;
 				document.location = "app://showIndicator";
 				//add for debug
 				var dom = "";
@@ -68,8 +67,6 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
 				return this;
 			},
 		renderAll:function(data){
-
-
 			return this;
 		},
     // data : received collection
@@ -89,39 +86,42 @@ define(["zepto","underscore","backbone","lib/text!templates/summary.html"],funct
           className: className
         });
         dom += tmp;
-
-        console.log(dom);
       },this);
-      this.$el.find("#summary-list").html(dom);
+      this.$el.html(dom);
       return this;
     },
 
 		fetchDrinks:function(callback){
 			var self = this;
 			var typeMap = this.collection.incCountByType();
-			var res = [];
+			self.res = [];
 			var injectItem = function(typeMap){
 				Object.keys(typeMap).forEach(function(item){
-					res.push({type: item,count:typeMap[item]});
+					self.res.push({type: item,count:typeMap[item]});
 				},this);
 			};
-			this.collection.fetch({
-				success:function(data){
-
-					var typeMap = self.collection.incCountByType();
-					injectItem(typeMap);
-//					self.renderList(res);
-          self[callback](res);
-				},
-				error:function(msg){
-				  document.location = "app://hideIndicator";
-          self.$el.html("<h1 class='warning'>There's no drinks</h1>");
-          self.$el.css("text-align",'center');
-          self.$el.css("margin-top","150px");
-				}
+      if (self.cachedData){
+        self[callback](self.res);
+      }else{
+        this.collection.fetch({
+          success:function(data){
+            self.cachedData = data;
+            var typeMap = self.collection.incCountByType();
+            injectItem(typeMap);
+            self[callback](self.res);
+          },
+          error:function(msg){
+            document.location = "app://hideIndicator";
+            self.$el.html("<h1 class='warning'>There's no drinks</h1>");
+            self.$el.css("text-align",'center');
+            self.$el.css("margin-top","150px");
+          }
 
 			});
-			return res;
+
+      }
+
+
 		}
 
 

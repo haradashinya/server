@@ -15,9 +15,9 @@
     <file path="/index.html" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449201594" ignored="false" />
     <file path="/drink_collection_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449227315" ignored="false" />
     <file path="/drink.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449467232" ignored="false" />
-    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454614512" ignored="false" />
+    <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355455196139" ignored="false" />
     <file path="/a.dummy" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355452354159" ignored="false" />
-    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355454830319" ignored="false" />
+    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355464392768" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="summary_view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="0" selection-start="2445" selection-end="2445" vertical-scroll-proportion="0.628331">
+            <state line="73" column="8" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,7 +89,7 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="39" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+            <state line="37" column="35" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -419,14 +419,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="39" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.0">
+        <state line="37" column="35" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="0" selection-start="2445" selection-end="2445" vertical-scroll-proportion="0.628331">
+        <state line="73" column="8" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

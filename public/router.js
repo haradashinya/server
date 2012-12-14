@@ -1,6 +1,8 @@
 define(["zepto","underscore","backbone","drink_collection","drink_collection_view","lib/text!templates/popup.html","header_view","summary_view"],
 	function($,_,Backbone,DrinkCollection,DrinkCollectionView,popupTemplate,HeaderView,SummaryView){
 		var drinks = new DrinkCollection();
+    var summaryView;
+
 
 
 
@@ -8,7 +10,7 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 			routes: {
 				"users/:uuid/drinks/edit": "editDrink",
 				"users/:uuid/drinks/summary":"showSummary",
-				"users/:uuid/drinks/summary/month":"showSummaryAll"
+				"users/:uuid/drinks/summary/month":"showSummaryMonth"
 			},
 
 			editDrink:function(uuid){
@@ -19,16 +21,20 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
 			},
 			showSummary:function(uuid){
 				window.uuid = uuid;
-				var summaryView = new SummaryView({collection: drinks});
+				summaryView = new SummaryView({collection: drinks});
         // renderList is callback
+        // 一回fetchしたら、データをどこかに格納しておこう。
+        // if complete fetch data once, then save data in summaryView's instance.
         summaryView.fetchDrinks("renderList");
 				$("#content").html(summaryView.el);
 			},
-			showSummaryAll: function(uuid,all){
+			showSummaryMonth: function(uuid,all){
         // for debug
         window.uuid = uuid;
         console.log(Array.isArray(drinks));
-				var summaryView = new SummaryView({collection: drinks});
+        //if  summaryView instance does not exist, then create new instance.
+        if(!summaryView)  summaryView = new SummaryView({collection: drinks});
+
         summaryView.fetchDrinks("renderMonth");
 				$("#content").html(summaryView.el);
 
