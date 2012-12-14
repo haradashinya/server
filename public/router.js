@@ -35,7 +35,7 @@ define(["zepto","underscore","backbone","drink_collection","drink_collection_vie
         //if  summaryView instance does not exist, then create new instance.
         if(!summaryView)  summaryView = new SummaryView({collection: drinks});
 
-        summaryView.fetchDrinks("renderMonth",{month: true});
+        summaryView.fetchDrinks("renderMonth","month");
 				$("#content").html(summaryView.el);
 
 			}

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/collections/drink_collection.js" afterPath="$PROJECT_DIR$/public/collections/drink_collection.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/router.js" afterPath="$PROJECT_DIR$/public/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/summary_view.js" afterPath="$PROJECT_DIR$/public/views/summary_view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -18,7 +17,7 @@
     <file path="/drink.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355449467232" ignored="false" />
     <file path="/router.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355464621945" ignored="false" />
     <file path="/a.dummy" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355452354159" ignored="false" />
-    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355465380168" ignored="false" />
+    <file path="/summary_view.js" changelist="78ed80e7-e96d-428f-a7f7-c1fa7437a6b9" time="1355465883178" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <file leaf-file-name="summary_view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="49" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.6507714">
+            <state line="99" column="52" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.8078541">
               <folding />
             </state>
           </provider>
@@ -90,7 +89,16 @@
       <file leaf-file-name="drink_collection.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="14" column="9" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="53" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,9 +129,9 @@
         <option value="$PROJECT_DIR$/public/views/drink_collection_view.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/models/drink.js" />
+        <option value="$PROJECT_DIR$/public/collections/drink_collection.js" />
         <option value="$PROJECT_DIR$/public/router.js" />
         <option value="$PROJECT_DIR$/public/views/summary_view.js" />
-        <option value="$PROJECT_DIR$/public/collections/drink_collection.js" />
       </list>
     </option>
   </component>
@@ -241,7 +249,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="576" y="22" width="864" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -259,7 +267,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24970274" sideWeight="0.49003986" order="0" side_tool="false" content_ui="combo" x="331" y="82" width="210" height="753" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.24970274" sideWeight="0.49003986" order="0" side_tool="false" content_ui="combo" x="331" y="82" width="210" height="753" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,21 +421,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="58" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.78541374">
+        <state line="37" column="53" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/collections/drink_collection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+        <state line="14" column="9" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/summary_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="49" selection-start="2638" selection-end="2638" vertical-scroll-proportion="0.6507714">
+        <state line="99" column="52" selection-start="2647" selection-end="2647" vertical-scroll-proportion="0.8078541">
           <folding />
         </state>
       </provider>
